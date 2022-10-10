@@ -11,12 +11,12 @@ function App() {
       {path: '/', element: <Quizs></Quizs>},
       {path: '/statistics', element: <Statistics></Statistics>},
       {path: '/blog', element: <Blog></Blog>},
-    ]}
+    ]},
+    {path: '/*', element: <p className='text-center text-3xl'>This page was not found: 404</p>}
   ])
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
-      <h1>I am going to start </h1>
     </div>
   );
 }
