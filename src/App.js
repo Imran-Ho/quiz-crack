@@ -8,7 +8,11 @@ import Main from './layout/Main';
 function App() {
   const router = createBrowserRouter([
     {path: '/', element:<Main></Main>, children: [
-      {path: '/', element: <Quizs></Quizs>},
+      {path: '/',
+      loader: ()=>{
+        return fetch('https://openapi.programming-hero.com/api/quiz')
+      },
+      element: <Quizs></Quizs>},
       {path: '/statistics', element: <Statistics></Statistics>},
       {path: '/blog', element: <Blog></Blog>},
     ]},
