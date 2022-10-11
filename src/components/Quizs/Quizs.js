@@ -6,14 +6,16 @@ const Quizs = () => {
     const courses = useLoaderData()
     console.log(courses)
     return (
-        <div>
+        <div  className='mx-6'>
             <h2>Quizsjhgfdjhjf</h2>
-            {
-                courses.data.map(course => <Course
-                key={course.id}
-                course={course}
-                ></Course>)
-            }
+           <div className='grid grid-cols-4 gap-3'>
+                    {
+                        courses.data.map(course => <Course
+                        key={course.id}
+                        course={course}
+                        ></Course>)
+                    }
+           </div>
 
         </div>
     );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='md:flex justify-around content-center bg-slate-400 py-3'>
+        <div className='md:flex justify-around content-center bg-slate-400 py-3 drop-shadow-lg'>
             <div>
                 <h1 className='text-4xl'>Know-Thyself</h1>
             </div>
