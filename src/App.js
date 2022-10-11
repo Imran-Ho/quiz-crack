@@ -17,7 +17,7 @@ function App() {
 
       {path:'/course/:courseID',
       loader: async ({params}) => {
-        console.log(params.courseID)
+        // console.log(params.courseID)
         return fetch(`https://openapi.programming-hero.com/api/quiz/${params.courseID}`)
       },
        element: <Question></Question>},
