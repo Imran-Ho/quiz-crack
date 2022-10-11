@@ -7,10 +7,11 @@ const Question = () => {
     console.log(questions.data)
     return (
         <div>
-            <h2>Question of : {questions.data.name}</h2>
-            <div className='my-3 text-center'>
+            <h2 className='text-2xl text-center pt-3'>Question of : {questions.data.name}</h2>
+            <div className='my-3 p-6'>
                 {
                     questions.data.questions.map(question => <QTypes
+                    key={question.id}
                     question={question}
                     ></QTypes>)
                 }
