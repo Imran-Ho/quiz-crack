@@ -4,10 +4,10 @@ import Course from '../Course/Course';
 
 const Quizs = () => {
     const courses = useLoaderData()
-    console.log(courses)
+    // console.log(courses)
     return (
         <div  className='mx-6'>
-            <h2>Quizsjhgfdjhjf</h2>
+            <h2>Gain Skill with Joy</h2>
            <div className='grid grid-cols-4 gap-3'>
                     {
                         courses.data.map(course => <Course
