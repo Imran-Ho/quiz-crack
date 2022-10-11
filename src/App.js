@@ -22,7 +22,10 @@ function App() {
       },
        element: <Question></Question>},
 
-      {path: '/statistics', element: <Statistics></Statistics>},
+      {path: '/statistics',
+      loader: ()=>{
+        return fetch('https://openapi.programming-hero.com/api/quiz')},
+      element: <Statistics></Statistics>},
       {path: '/blog', element: <Blog></Blog>},
     ]},
     {path: '/*', element: <p className='text-center text-3xl'>This page was not found: 404</p>}

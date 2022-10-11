@@ -5,7 +5,8 @@ import swal from 'sweetalert';
 const QTypes = ({question}) => {
     console.log(question)
     const items = [];
-    //
+
+    //clickHandler for sweet alert.
     const correctHandler = (quest)=>{
         // console.log(quest.correctAnswer)
         swal("The Correct Answer is:", quest.correctAnswer);
