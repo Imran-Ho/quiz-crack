@@ -1,5 +1,4 @@
 import React from 'react';
-// import React, { PureComponent } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
 

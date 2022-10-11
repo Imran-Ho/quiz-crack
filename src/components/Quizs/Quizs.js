@@ -6,13 +6,13 @@ import img from '../Home/home.png'
 const Quizs = () => {
     const courses = useLoaderData()
     // console.log(courses)
-    
 
+    
     return (
         <div  className='m-6'>
             <div className='md:flex justify-start content-center'>
                 <img className='my-3 rounded-lg' src={img} alt="" />
-                <h1 className='text-5xl m-10 text-emerald-400' >Gain Skill with Joy</h1>
+                <h1 className='text-5xl m-10 text-emerald-400' >Skill Development with Funny Manner.</h1>
             </div>
            <div className='md:grid grid-cols-4 gap-6'>
                     {

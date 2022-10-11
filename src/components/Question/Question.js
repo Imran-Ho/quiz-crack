@@ -4,7 +4,7 @@ import QTypes from '../QTypes/QTypes';
 
 const Question = () => {
     const questions = useLoaderData();
-    console.log(questions.data)
+    // console.log(questions.data)
     return (
         <div>
             <h2 className='text-2xl text-center p-3 shadow-lg my-3 rounded-lg '>Question of : {questions.data.name}</h2>
