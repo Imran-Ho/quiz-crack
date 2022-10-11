@@ -11,7 +11,7 @@ const Statistics = () => {
     return (
         <div>
 
-            <h1 className='text-2xl text-center'>In the following Line Chart shows the total quiz of the courses.</h1>
+            <h1 className='text-2xl text-center my-6'>In the following Line Chart shows the total quiz of the courses.</h1>
             <div className='md:flex'>
             <div className='text-center'>
                 <LineChart width={500} height={400} data={data}  margin={{

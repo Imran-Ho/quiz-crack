@@ -6,6 +6,8 @@ import img from '../Home/home.png'
 const Quizs = () => {
     const courses = useLoaderData()
     // console.log(courses)
+    
+
     return (
         <div  className='m-6'>
             <div className='md:flex justify-start content-center'>
