@@ -10,7 +10,7 @@ const QTypes = ({question}) => {
     // quiz option selection condition.
     const seletedCorrectOne =(opt)=>{
             if(opt === question.correctAnswer){
-                alert('This one is correct answer')
+                swal("This one is correct answer")
                 // toast.success('wow')
                 
             }
